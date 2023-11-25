@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleJvm" value="#JAVA_HOME" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/custom-connector" />
+            <option value="$PROJECT_DIR$/ddd" />
+            <option value="$PROJECT_DIR$/ddd/marketplace-core" />
+            <option value="$PROJECT_DIR$/ddd/marketplace-shared" />
+            <option value="$PROJECT_DIR$/spring-kafka" />
+            <option value="$PROJECT_DIR$/sr-backward" />
+            <option value="$PROJECT_DIR$/sr-forward" />
+            <option value="$PROJECT_DIR$/sr-full" />
+            <option value="$PROJECT_DIR$/streams" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>
