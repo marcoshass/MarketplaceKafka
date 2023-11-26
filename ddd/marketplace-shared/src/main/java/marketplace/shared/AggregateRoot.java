@@ -2,15 +2,26 @@ package marketplace.shared;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 import java.util.function.Consumer;
 
 public abstract class AggregateRoot<TId> {
-    private TId id;
-    public TId getId() {
-        return id;
+    public TId id;
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == this)
+            return true;
+
+        if (!(o instanceof AggregateRoot<?> that))
+            return false;
+
+        return Objects.equals(id, that.id);
     }
-    protected void setId(TId id) {
-        this.id = id;
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getClass().getName() + id);
     }
 
     protected void when(Object event) {

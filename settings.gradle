@@ -20,3 +20,7 @@ findProject(':ddd:marketplace-core')?.name = 'marketplace-core'
 
 include 'ddd:marketplace-shared'
 findProject(':ddd:marketplace-shared')?.name = 'marketplace-shared'
+
+include 'ddd:marketplace-api'
+findProject(':ddd:marketplace-api')?.name = 'marketplace-api'
+

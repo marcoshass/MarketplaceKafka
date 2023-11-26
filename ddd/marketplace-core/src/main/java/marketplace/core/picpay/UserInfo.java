@@ -8,7 +8,6 @@ public class UserInfo extends AggregateRoot<Integer> {
     public static final  int FIRSTNAME_MAX_LENGTH = 255;
     public static final int LASTNAME_MAX_LENGTH = 255;
 
-    private int id;
     private UserType userType;
     private String firstName;
     private String lastName;

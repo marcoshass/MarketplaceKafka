@@ -1,9 +1,14 @@
 package marketplace.core.picpay;
 
 import marketplace.core.InvalidEntityStateException;
+import marketplace.shared.ValueObject;
 import org.apache.commons.lang3.StringUtils;
+import org.apache.commons.lang3.builder.EqualsBuilder;
+import org.apache.commons.lang3.builder.HashCodeBuilder;
 
-public class Document {
+import java.util.Objects;
+
+public class Document extends ValueObject<Document> {
     public static final int MAX_LENGTH = 50;
     private String docType;
     private String value;
@@ -26,6 +31,18 @@ public class Document {
 
     public String getValue() {
         return value;
+    }
+
+    @Override
+    protected boolean equalsCore(Object o) {
+        var other = (Document) o;
+        return Objects.equals(docType, other.getDocType()) &&
+                Objects.equals(value, other.getValue());
+    }
+
+    @Override
+    protected int getHashCodeCore() {
+        return Objects.hash(docType, value);
     }
 
     private boolean isValid(String docType, String docNumber) {

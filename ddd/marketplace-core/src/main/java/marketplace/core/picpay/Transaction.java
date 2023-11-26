@@ -4,7 +4,6 @@ import marketplace.core.InvalidEntityStateException;
 import marketplace.shared.AggregateRoot;
 
 public class Transaction extends AggregateRoot<Integer> {
-    private int id;
     private boolean isAuthorized;
 
     private UserInfo payer;

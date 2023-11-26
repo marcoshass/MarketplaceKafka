@@ -11,6 +11,7 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/custom-connector" />
             <option value="$PROJECT_DIR$/ddd" />
+            <option value="$PROJECT_DIR$/ddd/marketplace-api" />
             <option value="$PROJECT_DIR$/ddd/marketplace-core" />
             <option value="$PROJECT_DIR$/ddd/marketplace-shared" />
             <option value="$PROJECT_DIR$/spring-kafka" />
