@@ -1,4 +1,0 @@
-rootProject.name = 'ddd'
-include 'marketplace-core'
-include 'marketplace-shared'
-include 'marketplace-api'

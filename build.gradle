@@ -17,11 +17,11 @@
 
 subprojects {
     apply plugin: 'java'
-    apply plugin: 'idea'
+    apply plugin: 'java-library'
 }
 
-task sayHello {
-    doLast {
-        println "Hello from multi-project build"
-    }
-}
+//task sayHello {
+//    doLast {
+//        println "Hello from multi-project build"
+//    }
+//}
